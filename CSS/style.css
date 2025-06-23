@@ -9,7 +9,6 @@
 body {
     font-family: "Poppins", sans-serif;
     margin-top: 110px;
-    
 }
 
 h1 {
@@ -34,18 +33,7 @@ p {
     --cor-5: #DCF2F0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
-}
-
-/* <<<<< NAVBAR >>>>> */
+/* <<<<< HEADER >>>>> */
 
 .headdesk {
     z-index: 3;
@@ -238,133 +226,6 @@ input[type=search] {
     top: 100%;
 }
 
-/* Carrossel Animais */
-
-.slide-container{
-  max-width: 1120px;
-  width: 100%;
-  padding: 40px 0;
-}
-.slide-content{
-  margin: 0 40px;
-  overflow: hidden;
-  border-radius: 25px;
-}
-.card{
-  border-radius: 25px;
-  background-color: #FFF;
-}
-
-.image-content,
-.card-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-.image-content{
-  position: relative;
-  row-gap: 5px;
-  padding: 25px 0;
-}
-.overlay{
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #4070F4;
-  border-radius: 25px 25px 0 25px;
-}
-.overlay::before,
-.overlay::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: -40px;
-  height: 40px;
-  width: 40px;
-  background-color: #4070F4;
-}
-.overlay::after{
-  border-radius: 0 25px 0 0;
-  background-color: #FFF;
-}
-.card-image{
-  position: relative;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-  background: #FFF;
-  padding: 3px;
-}
-.card-image .card-img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 4px solid #4070F4;
-}
-.name{
-  font-size: 18px;
-  font-weight: 500;
-  color: #333;
-}
-.description{
-  font-size: 14px;
-  color: #707070;
-  text-align: center;
-}
-.button{
-  border: none;
-  font-size: 16px;
-  color: #FFF;
-  padding: 8px 16px;
-  background-color: #4070F4;
-  border-radius: 6px;
-  margin: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.button:hover{
-  background: #265DF2;
-}
-
-.swiper-navBtn{
-  color: #6E93f7;
-  transition: color 0.3s ease;
-}
-.swiper-navBtn:hover{
-  color: #4070F4;
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-  font-size: 35px;
-}
-.swiper-button-next{
-  right: 0;
-}
-.swiper-button-prev{
-  left: 0;
-}
-.swiper-pagination-bullet{
-  background-color: #6E93f7;
-  opacity: 1;
-}
-.swiper-pagination-bullet-active{
-  background-color: #4070F4;
-}
-
-@media screen and (max-width: 768px) {
-  .slide-content{
-    margin: 0 10px;
-  }
-  /* .swiper-navBtn{
-    display: none;
-  } */
-}
-
-
 /* Banner */
 
 #bannerhdiv {
@@ -381,6 +242,92 @@ input[type=search] {
     background-color: rgba(72, 89, 88, 0.9);
 }
 
+/* Carrossel Animais */
+
+.tcarani{
+    text-align: right;
+    margin-right: 2vw;
+}
+
+.slide-container{
+  width: 55%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px 14px;
+  height: 13vh;
+  border-radius: 0 30px 30px;
+  background-color: var(--cor-1);
+}
+
+#cardani{
+    border: none;
+    color: var(--cor-4);
+}
+
+#cardani img{
+    width: 100%;
+    height: 30vh;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+/* .card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  padding: 3px;
+} */
+
+.description{
+  font-size: 14px;
+  text-align: center;
+}
+
+.swiper-navBtn{
+  color: var(--cor-1);
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: var(--cor-1);
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 50px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: var(--cor-3);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--cor-1);
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  /* .swiper-navBtn{
+    display: none;
+  } */
+}
+
+
+/* Banner */
 
 #bannerhdiv h1 {
     width: 30vw;
@@ -389,7 +336,7 @@ input[type=search] {
     padding: 40px;
     letter-spacing: 4px;
     font-size: calc(2vw + 1vh);
-    overflow: visible;
+    overflow: hidden;
 }
 
 #bannerhdiv button {
@@ -397,7 +344,7 @@ input[type=search] {
     position: relative;
     left: 60%;
     top: 90%;
-    width: calc(9vw);
+    width: calc(8vw);
     height: 5vh;
     border-radius: 15px;
     border: solid 2px #31403E;
@@ -408,11 +355,14 @@ input[type=search] {
 
 #bannerhdiv button:hover {
     background-color: #31403E;
-    width: calc(9vw);
+    width: 8vw;
     height: 5vh;
     border-radius: 15px;
     color: white;
+
 }
+
+/* Depoimentos */
 
 .depoi {
     display: flex;
@@ -421,9 +371,9 @@ input[type=search] {
     justify-content: center;
 }
 
-.h1depoi {
-    text-align: center;
-    margin-top: 3%;
+.h1depoi{
+    text-align: center; 
+    margin-top:3%;
 }
 
 .tdepoi {
@@ -432,7 +382,7 @@ input[type=search] {
     align-self: flex-end;
 }
 
-.depoi .card {
+.depoi .card{
     border: none;
 }
 
@@ -572,6 +522,7 @@ input[type=search] {
     width: 100%;
     height: 180px;
     padding: 16px;
+
 }
 
 .form_box button {
@@ -625,6 +576,7 @@ input[name="but-cad"] {
     font-size: 20px;
     font-weight: 700;
     margin-top: 3vh;
+
 }
 
 input[name="but-cad"]:hover {
@@ -633,43 +585,52 @@ input[name="but-cad"]:hover {
 
 /* <<<<< LOGIN >>>>> */
 
-.caixa {
-    width: 40vw;
+.caixa{
+ 
+   width: 40vw;
 }
-
-.img-login {
+ 
+.img-login{
+ 
     width: 20vw;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left:auto;
+    margin-right:auto;
 }
-
-.col-12 input {
+ 
+ 
+.col-12 input{
+ 
     width: 100%;
     height: 60px;
     border-radius: 8px;
-    border: thin solid #9BBFBC;
+    border:thin solid #9BBFBC;
     padding-left: 16px;
     margin-bottom: 16px;
     font-size: 16px;
 }
-
-.text-log7-c {
-    margin-left: 20vw;
+ 
+.text-log7-c{
+ 
+margin-left: 20vw;
+ 
 }
-
-.checkbox-login {
-    margin-top: 10px;
+ 
+ 
+.checkbox-login{
+ margin-top: 10px;
 }
-
-.text-log7,
-.checkbox-login {
-    display: block;
-    text-align: center;
+ 
+.text-log7, .checkbox-login {
+ 
+display: block;
+text-align: center;
+ 
 }
-
-.row button[name="but-log"] {
-
+ 
+ 
+.row button[name="but-log"]{
+ 
     display: block;
     border: none;
     outline: none;
@@ -678,67 +639,153 @@ input[name="but-cad"]:hover {
     border-radius: 8px;
     background-color: #31403E;
     color: #F5F5F5;
-    font-size: 16px;
+    font-size: 16px;    
     margin-left: auto;
     margin-right: auto;
     margin-top: 2vw;
 }
 
-/* <<<<< ALTERAÇÃO DE SENNHA - CONFIRMAR E-MAIL >>>>> */
 
-.img-altemail {
-    width: 20vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
+
+/* POSTAGEM */
+
+.postcont {
+  display: flex;
+  padding: 30px;
+  gap: 10px;
 }
 
-.caixa-senha {
-
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
+.left-panel {
+  flex: 1;
+  background-color: var(--cor-1);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
 }
 
-.psenha {
-    width: 20vw;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+.upload-box {
+  border: 2px dashed #ccc;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #888;
 }
 
-.but-csenha {
-    border: none;
-    outline: none;
-    width: 15vw;
-    height: 60px;
-    border-radius: 8px;
-    background-color: #31403E;
-    color: #F5F5F5;
-    font-size: 16px;
-    margin: 10px;
+.preview-imagens-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 15px; 
+    padding: 10px;
+    min-height: 80px; 
+    align-items: center; 
+    justify-content: center; 
 }
 
-.but-casenha {
-    border: none;
-    outline: none;
-    width: 15vw;
-    height: 60px;
-    border-radius: 8px;
-    background-color: #777777;
-    color: #F5F5F5;
-    font-size: 16px;
-    margin: 10px;
-}
-
-.bt-senha {
-    display: flex;
-    gap: 5vw;
+.preview-imagem-item {
+    width: 60px; 
+    height: 60px; 
+    overflow: hidden; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center;
     justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.preview-imagem-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.botao-enviar {
+    background-color: var(--cor-2)
+}
+
+.botao-enviar:hover {
+    background-color: var(--cor-4);
+}
+
+.right-panel {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border:thin solid #9BBFBC;
+}
+
+.right-panel p {
+  color: var(--cor-3);
+  margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.right-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+} 
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border:thin solid #9BBFBC;
+}
+
+ select, input {
+ padding: 10px;
+ border: 1px solid #9BBFBC;
+ border-radius: 4px;
+}  
+
+#genero{
+    width: 100%;
+}
+
+form button {
+  padding: 10px;
+  background-color: var(--cor-1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgba(49, 64, 62, 0.9);
+}
+
+.campos-lado-a-lado {
+    display: flex; 
+    gap: 20px; 
+    width: 100%; 
+}
+
+.campos-lado-a-lado > div {
+    flex: 1; 
+}
+
+.campos-lado-a-lado label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.campos-lado-a-lado input {
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #9BBFBC; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
 }
 
 /* <<<<< FOOTER >>>>> */
@@ -751,6 +798,7 @@ input[name="but-cad"]:hover {
     left: 0;
     margin-top: 5vh;
 }
+
 
 .footer a {
     margin: 20px;
@@ -769,7 +817,73 @@ input[name="but-cad"]:hover {
     bottom: 1%;
 }
 
-/* <<<<< MOBILE - RETRATO >>>>>*/
+/* ALTSENHA(CONFIRMAÇAÕ DE E-MAIL) */
+
+.img-altemail{
+ 
+    width: 20vw;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+ 
+.caixa-senha{
+ 
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+ 
+.psenha{
+    width: 20vw;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.but-csenha{
+   
+    border: none;
+    outline: none;
+    width: 15vw;
+    height:60px;
+    border-radius: 8px;
+    background-color: #31403E;
+    color: #F5F5F5;
+    font-size: 16px;
+    margin: 10px;  
+     
+}
+ 
+.but-casenha{
+ 
+    border: none;
+    outline: none;
+    width: 15vw;
+    height:60px;
+    border-radius: 8px;
+    background-color: #777777;
+    color: #F5F5F5;
+    font-size: 16px;  
+    margin: 10px;  
+   
+   
+}
+ 
+.bt-senha{
+ 
+    display: flex;
+    gap: 5vw;
+    justify-content: center ;
+     
+}
+
+/* <<<<< Mobile - Retrato >>>>>*/
 
 @media (max-width:991px) {
 
@@ -801,7 +915,9 @@ input[name="but-cad"]:hover {
         font-size: 18px;
     }
 
+
     /* Mobile - Home */
+
 
     #carouselExampleCaptions {
         margin-top: 110px;
@@ -812,6 +928,7 @@ input[name="but-cad"]:hover {
         height: 60vh;
     }
 
+
     .tcar1 {
         width: 75vw;
         margin: auto;
@@ -820,6 +937,7 @@ input[name="but-cad"]:hover {
         right: 8%;
         border-radius: 20px;
     }
+
 
     #bcar1 {
         width: 22vw;
@@ -857,6 +975,7 @@ input[name="but-cad"]:hover {
 
     .tcar2 h1 {
         font-size: 30px;
+
     }
 
     .tcar2 h5 {
@@ -868,115 +987,132 @@ input[name="but-cad"]:hover {
         margin: auto;
     }
 
-    /* Mobile - Carrossell aniamais */
+    .slide-container{
+        width: 80vw;
+    }
+
+    .swiper-navBtn{
+        display: none;
+    }
+
+    .card-content{
+        height: 15vh;
+    }
+
+    .tcarani{
+        text-align: center;
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .tcarani h4{
+        display: none;
+    }
+    
+
+    #bannerhdiv {
+        display: none;
+    }
+
+    .tdepoi {
+        display: none;
+    }
+
+    .cards-box {
+        width: 70vw;
+    }
+
+    .cards-box .card {
+        width: 100%;
+    }
+
+
+.h1depoi{
+    margin-top: 6%;
+}
+
+
+.depoi .card{
+    height: 32vh;
+    margin-top: 3%;
+}
+
+.content-placeholder .row .img {
+    width: calc(50px + 2vw);
+    height: calc(50px + 2vw);
+}
+
+
+
+    .comentario {
+        margin-top: 15%;
+    }
+
+    .form_box {
+        width: 90%;
+    }
+
+    .form_box form {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
+    .form_box input,
+    .form_box textarea {
+        width: calc(50% - 8px);
+        height: 48px;
+        border-radius: 8px;
+        border: thin solid #9BBFBC;
+        padding-left: 2vw;
+        margin-bottom: 16px;
+    }
+
+    .form_box input:first-child {
+        margin-right: 16px;
+    }
+
+    .form_box input[name=email] {
+        width: 100%;
+    }
+
+    .form_box textarea {
+        width: 100%;
+        height: 180px;
+        padding: 0 2vw;
+
+    }
+
+    .form_box button {
+        margin-left: 0px;
+        width: 35vw;
+
+    }
 
     /* Mobile - Cadastro  */
+
 
     #cardform {
         width: 95%;
     }
 
     #cardform .col-6 input {
-        padding-left: 5px;
-        font-size: 13px;
+        padding-left: 8px;
+        font-size: 14px;
     }
 
     #cardform .col-12 input {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     /* Mobile - Login */
 
-    .caixa {
-        width: 80VW;
-    }
-
-    .img-login {
-
+    .img-login{
         width: 60vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    /* MOBILE - ALTERAÇÃO DE SENHA(CONFIRMAÇÃO DE E-MAIL) */
-
-    .img-altemail {
-
-        width: 50vw;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .caixa-senha {
-
-        padding: 20px;
-        border: 1px solid black;
-        border-radius: 10px;
+    .caixa{
         width: 80vw;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    .tsenha {
-
-        font-size: 25px;
-    }
-
-    .psenha {
-        width: 70vw;
-        text-align: center;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 15px;
-    }
-
-    .col-12 input[name=email] {
-
-        width: 10w;
-        height: 10vw
-    }
-
-    .but-csenha {
-
-        padding: 10px 20px;
-        border: none;
-        outline: none;
-        width: 95%;
-        height: 50px;
-        border-radius: 8px;
-        background-color: #31403E;
-        ;
-        color: #F5F5F5;
-        font-size: 12px;
-        margin: 10px;
-    }
-
-    .but-casenha {
-
-        padding: 10px 20px;
-        border: none;
-        outline: none;
-        width: 95%;
-        height: 50px;
-        border-radius: 8px;
-        background-color: #777777;
-        color: #F5F5F5;
-        font-size: 12px;
-        margin: 10px;
-
-
-    }
-
-    .bt-senha {
-
-        display: block;
-        gap: 5vw;
-
-
     }
 
     /* Mobile - Footeer */
@@ -1004,7 +1140,77 @@ input[name="but-cad"]:hover {
 
 }
 
-/* <<<<< MOBILE - PAISAGEM>>>>> */
+/* Mobile = Altsenha(verificação de e-mail) */
+
+ .img-altemail{
+
+    width: 50vw;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+ 
+.caixa-senha{
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;  
+}
+ 
+.tsenha{
+    font-size: 25px;
+}
+ 
+.psenha{
+    width: 70vw;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+ 
+.col-12 input[name=email]{
+    width: 10w;
+    height: 10vw 
+}
+ 
+.but-csenha{ 
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 95%;
+    height:50px;
+    border-radius: 8px;
+    background-color: #31403E;;
+    color: #F5F5F5;
+    font-size: 12px;
+    margin: 10px;       
+}
+ 
+.but-casenha{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 95%;
+    height:50px;
+    border-radius: 8px;
+    background-color: #777777;
+    color: #F5F5F5;
+    font-size: 12px;  
+    margin: 10px;    
+}
+ 
+.bt-senha{
+ 
+    display: block;
+    gap: 5vw; 
+}
+
+
+/* <<<<< Mobile paisagem >>>>> */
 
 @media (max-height:450px) {
     #bcar1 {
@@ -1016,11 +1222,6 @@ input[name="but-cad"]:hover {
         height: 8vh;
         font-size: medium;
     }
-
-    .cards-box .card {
-        height: 50vh;
-    }
-
 }
 
 

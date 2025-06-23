@@ -24,7 +24,7 @@
 <div class="user-actions">
   <form action="">
     <img src="IMG/search.svg" class="pesbtn" alt="">
-    <input type="search">
+    <input type="search" id="pesqicon">
   </form>
   <button onclick="document.location='cadastro.php'" id="bcad">Cadastrar-se</button>
   <button onclick="document.location='login.php'" id="blog">Login</button>

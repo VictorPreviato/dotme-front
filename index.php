@@ -42,166 +42,78 @@
 </div>
 </div>
 
-<!-- Car-ani -->
+<!-- Carrossel animias - Desaparecidos -->
 
-        <div class="slide-container swiper">
+ <div class="slide-container swiper">
+    <div class="tcarani">  
+<h1>Animais Desaparecidos</h1>
+<h4>Reconhece algum desses bichinhos? Ajude-os a voltar para casa!</h4>
+</div>
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                               <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
+                    <div class="card swiper-slide" id="cardani">
+                        <div><img src="IMG/PET/robin.jpg" alt=""></div>
                         <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-
+                            <h4 class="name">Robin</h4>
+                            <p>Contato:(11) 99999-9999</p>
+                            <p>Último local visto:</p>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                   <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
+                    <div class="card swiper-slide" id="cardani">
+                        <div><img src="IMG/PET/robin.jpg" alt=""></div>
                         <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
+                            <h4 class="name">Robin</h4>
+                            <p>Contato:(11) 99999-9999</p>
+                            <p>Último local visto:</p>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                 <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
+                    <div class="card swiper-slide" id="cardani">
+                        <div><img src="IMG/PET/robin.jpg" alt=""></div>
                         <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-
+                            <h4 class="name">Robin</h4>
+                            <p>Contato:(11) 99999-9999</p>
+                            <p>Último local visto:</p>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
+                    <div class="card swiper-slide" id="cardani">
+                        <div><img src="IMG/PET/robin.jpg" alt=""></div>
                         <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisic
+                            <h4 class="name">Robin</h4>
+                            <p>Contato:(11) 99999-9999</p>
+                            <p>Último local visto:</p>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
+                    <div class="card swiper-slide" id="cardani">
+                        <div><img src="IMG/PET/robin.jpg" alt=""></div>
                         <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-
+                            <h4 class="name">Robin</h4>
+                            <p>Contato:(11) 99999-9999</p>
+                            <p>Último local visto:</p>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
+                    <div class="card swiper-slide" id="cardani">
+                        <div><img src="IMG/PET/robin.jpg" alt=""></div>
                         <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-
+                            <h4 class="name">Robin</h4>
+                            <p>Contato:(11) 99999-9999</p>
+                            <p>Último local visto:</p>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
+                    <div class="card swiper-slide" id="cardani">
+                        <div><img src="IMG/PET/robin.jpg" alt=""></div>
                         <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-
+                            <h4 class="name">Robin</h4>
+                            <p>Contato:(11) 99999-9999</p>
+                            <p>Último local visto:</p>
                         </div>
                     </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
-                                    <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-
-                        </div>
-                    </div>
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-
-                            <div class="card-image">
- <img src="https://tinypic.host/images/2022/12/19/img_avatar.png" alt="" class="card-img">                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Mohamed Yousef
-</h2>
-                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
-
-
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
 
-            <div class="swiper-button-next swiper-navBtn"></div>
+             <div class="swiper-button-next swiper-navBtn"></div>
             <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
+             <div class="swiper-pagination"></div>
         </div>
 
 <!-- Banner -->
@@ -212,6 +124,7 @@
     </div>
     <button>Leia Sobre</button>
 </div>
+
 
 <!-- Depoimentos -->
 <h1 class="h1depoi">Depoimentos</h1>
@@ -264,7 +177,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> 
 
 <!-- Feedback -->
 <div class="comentario">
@@ -281,5 +194,6 @@
         </form>
     </div>
 </div>
+
 
 <?php include './parciais/footer.php' ?>

@@ -75,6 +75,84 @@
   };
 </script>
 
+<script>
+    // Função para mostrar/ocultar campo "Outro tipo de animal"
+    function verificarOutroTipo() {
+      const select = document.getElementById("tipo-animal");
+      const campoOutro = document.getElementById("campo-outro-animal");
+
+      if (select.value === "outro") {
+        campoOutro.style.display = "block";
+      } else {
+        campoOutro.style.display = "none";
+      }
+    }
+
+    // Função para mostrar/ocultar campo "Nome do pet"
+    function mostrarCampoNome() {
+      const select = document.getElementById("tem-nome");
+      const campoNome = document.getElementById("campo-nome");
+
+      if (select.value === "sim") {
+        campoNome.style.display = "block";
+      } else {
+        campoNome.style.display = "none";
+      }
+    }
+
+    // Função para mostrar/ocultar campo "Última localização" baseado no tipo de cadastro
+    function gerenciarCamposPerdido() {
+      const tipoCadastroSelect = document.getElementById("tipo-cadastro");
+      const campoUltimaLocalizacao = document.getElementById("campo-ultima-localizacao");
+
+      if (tipoCadastroSelect.value === "perdido") {
+        campoUltimaLocalizacao.style.display = "block";
+      } else {
+        campoUltimaLocalizacao.style.display = "none";
+      }
+    }
+
+    // --- Funcionalidade de Pré-visualização de Imagens ---
+    document.addEventListener('DOMContentLoaded', () => {
+      const inputArquivo = document.getElementById('inputArquivo');
+      const previewContainer = document.getElementById('preview-imagens');
+
+      if (inputArquivo && previewContainer) {
+        inputArquivo.addEventListener('change', (event) => {
+          previewContainer.innerHTML = ''; // Limpa as pré-visualizações anteriores
+          const files = event.target.files;
+          const maxImages = 5; // Limite de 5 imagens
+
+          if (files.length > maxImages) {
+            alert(`Você pode enviar no máximo ${maxImages} imagens.`);
+            inputArquivo.value = ''; // Limpa a seleção de arquivos para forçar o limite
+            return;
+          }
+
+          for (const file of files) {
+            if (file.type.startsWith('image/')) { // Verifica se é um arquivo de imagem
+              const reader = new FileReader();
+
+              reader.onload = (e) => {
+                const imgWrapper = document.createElement('div');
+                imgWrapper.classList.add('preview-imagem-item'); // Classe para estilização
+
+                const img = document.createElement('img');
+                img.src = e.target.result;
+                img.alt = 'Pré-visualização da imagem';
+
+                imgWrapper.appendChild(img);
+                previewContainer.appendChild(imgWrapper);
+              };
+
+              reader.readAsDataURL(file); // Lê o arquivo como URL de dados (base64)
+            }
+          }
+        });
+      }
+    });
+  </script>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
