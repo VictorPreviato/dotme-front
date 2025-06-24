@@ -4,21 +4,21 @@
 <h1 style="text-align: center;">CADASTRO DE PET</h1>
 
   <main class="container postcont">
-    <section class="left-panel">
+     <section class="left-panel">
       <form id="form-upload-fotos" action="sua_pagina_de_postagem_futura.php" method="POST" enctype="multipart/form-data">
         <div class="upload-box">
           <span>📷</span>
           <p>Envie uma imagem do pet</p>
           <div>
             <label for="arquivo"></label>
-            <input type="file" name="fotos[]" id="inputArquivo" multiple accept="image/*">
+            <input type="file" name="foto" id="inputArquivo" multiple accept="image/*">
           </div>
           <p>Você pode enviar até 5 imagens</p>
           <div id="preview-imagens" class="preview-imagens-container"></div>
         </div>
         <button type="submit" class="botao-enviar">Enviar Fotos</button>
       </form>
-    </section>
+    </section> 
 
     <section class="right-panel">
       <form>

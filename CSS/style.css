@@ -244,7 +244,7 @@ input[type=search] {
 
 /* Carrossel Animais */
 
-.tcarani{
+.tcaranim{
     text-align: right;
     margin-right: 2vw;
 }
@@ -1008,7 +1008,13 @@ form button:hover {
     .tcarani h4{
         display: none;
     }
+
+    .tcaranim{
+    text-align: center;}
     
+    .tcaranim h4{
+        display: none;
+    }
 
     #bannerhdiv {
         display: none;
@@ -1115,6 +1121,54 @@ form button:hover {
         width: 80vw;
     }
 
+    /* Mobile - Altsenha(confirmação de w-mail) */
+
+    .img-altemail{
+    width: 50vw;
+    }
+ 
+    .caixa-senha{
+    width: 80vw;
+}
+
+.psenha{
+    width: 70vw;
+}
+ 
+.col-12 input[name=email]{
+    width: 10w;
+    height: 10vw 
+}
+ 
+.but-csenha{
+    width: 95%;
+    height:50px;
+    font-size: 12px;  
+}
+ 
+.but-casenha{
+    width: 95%;
+    height:50px;
+    font-size: 12px;      
+}
+ 
+.bt-senha{
+    display: block;
+    gap: 5vw; 
+}
+
+/* Mobile - Postagem */
+
+.postcont {
+  display: block;
+}
+
+
+.left-panel{
+
+}
+
+
     /* Mobile - Footeer */
 
     .footer {
@@ -1138,76 +1192,12 @@ form button:hover {
         margin-bottom: 3vh;
     }
 
+
+
 }
 
-/* Mobile = Altsenha(verificação de e-mail) */
 
- .img-altemail{
-
-    width: 50vw;
-    display: block;
-    margin-left:auto;
-    margin-right:auto;
-}
  
-.caixa-senha{
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-    width: 80vw;
-    margin-left: auto;
-    margin-right: auto;  
-}
- 
-.tsenha{
-    font-size: 25px;
-}
- 
-.psenha{
-    width: 70vw;
-    text-align: center;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 15px;
-}
- 
-.col-12 input[name=email]{
-    width: 10w;
-    height: 10vw 
-}
- 
-.but-csenha{ 
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    width: 95%;
-    height:50px;
-    border-radius: 8px;
-    background-color: #31403E;;
-    color: #F5F5F5;
-    font-size: 12px;
-    margin: 10px;       
-}
- 
-.but-casenha{
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    width: 95%;
-    height:50px;
-    border-radius: 8px;
-    background-color: #777777;
-    color: #F5F5F5;
-    font-size: 12px;  
-    margin: 10px;    
-}
- 
-.bt-senha{
- 
-    display: block;
-    gap: 5vw; 
-}
 
 
 /* <<<<< Mobile paisagem >>>>> */

@@ -42,13 +42,13 @@
 </div>
 </div>
 
-<!-- Carrossel animias - Desaparecidos -->
+<!-- Carrossel animais - Desaparecidos -->
 
  <div class="slide-container swiper">
-    <div class="tcarani">  
-<h1>Animais Desaparecidos</h1>
-<h4>Reconhece algum desses bichinhos? Ajude-os a voltar para casa!</h4>
-</div>
+    <div class="tcaranim">
+    <h1>Animais Desaparecidos</h1>
+    <h4>Reconhece algum desses bichinhos? Ajude-os a voltar para casa!</h4>
+    </div>
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
                     <div class="card swiper-slide" id="cardani">
