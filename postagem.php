@@ -16,7 +16,6 @@
           <p>Você pode enviar até 5 imagens</p>
           <div id="preview-imagens" class="preview-imagens-container"></div>
         </div>
-        <button type="submit" class="botao-enviar">Enviar Fotos</button>
       </form>
     </section> 
 
@@ -86,6 +85,8 @@
         <button type="submit" class="botao-publicar">Publicar</button>
       </form>
     </section>
+
+     <button type="submit" class="botao-publicar-mobile">Publicar</button>
   </main>
 
 <?php include'./parciais/footer.php' ?>

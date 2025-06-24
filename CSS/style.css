@@ -752,7 +752,7 @@ form textarea {
     width: 100%;
 }
 
-form button {
+.botao-publicar {
   padding: 10px;
   background-color: var(--cor-1);
   color: white;
@@ -761,7 +761,7 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+.botao-publicar:hover {
   background-color: rgba(49, 64, 62, 0.9);
 }
 
@@ -1159,13 +1159,55 @@ form button:hover {
 
 /* Mobile - Postagem */
 
+.left-panel{
+    margin-bottom: 10px;
+}
+
+#inputArquivo{
+    width: 60vw;
+}
+
 .postcont {
   display: block;
 }
 
+.preview-imagem-item{
+    display: none;
 
-.left-panel{
+}
 
+  .container.postcont {
+    display: grid;
+    grid-template-areas:
+      "right"
+      "left";
+  }
+
+  .left-panel {
+    grid-area: left;
+  }
+
+  .right-panel {
+    grid-area: right;
+  }
+
+.upload-box{
+    height: 23vh;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.botao-publicar{
+    display: none;
+}
+
+.botao-publicar-mobile {
+  padding: 10px;
+  background-color: var(--cor-1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 
@@ -1237,6 +1279,10 @@ form button:hover {
         background-color: white;
         color: var(--cor-1);
         border: none;
+    }
+
+    .botao-publicar-mobile{
+        display: none;
     }
 
 }
