@@ -16,6 +16,16 @@
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
 
 <script>
+function mostrarMais() {
+  document.querySelectorAll('.foto.hidden').forEach(card => {
+    card.classList.remove('hidden');
+  });
+  document.querySelector('.load-more').style.display = 'none';
+}
+</script>
+
+
+<script>
   var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,

@@ -646,9 +646,6 @@ text-align: center;
 }
 
 
-
-
-
 /* POSTAGEM */
 
 .postcont {
@@ -787,6 +784,128 @@ form textarea {
     border-radius: 4px; 
     box-sizing: border-box; 
 }
+
+/* <<<<< FEED - ADOÇÃO >>>>> */
+
+.filtros {
+  max-width: 950px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.fill{
+    background-color: #F5F5F5;
+    margin-top: 40px;
+    padding: 10px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.filtro {
+  max-width: 950px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.foto{
+    background-color: #31403E;
+    color: #DCF2F0;
+    border-radius: 10px;
+}
+
+.tl{
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+.filter-form {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-form select,
+.filter-form button {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.filter-form button {
+  background-color: #1f2d27;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.fundos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.fundos {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fundos img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.load-more {
+  margin: 2rem auto;
+  display: block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1f2d27;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#bannerhdiv1 {
+    width: 100%;
+    background-image: url(../IMG/pexels-gustavo-fring-4971402.jpg);
+    height: 71vh;
+    display: flex;
+    background-position: center;
+    background-size: 100%;
+    margin-top: 3%;
+}
+
+@media (max-width: 991px) {
+    #bannerhdiv1 {
+        display: none;
+    }
+}
+
+#bannerhdiv1 h1 {
+    width: 30vw;
+    height: 70vh;
+    color: white;
+    padding: 35px;
+    letter-spacing: 4px;
+    font-size: calc(2vw + 2vh);
+    overflow: hidden;
+    text-align: left;
+}
+
+.fundos > div {
+  max-width: 300px;
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+
 
 /* <<<<< FOOTER >>>>> */
 
@@ -1209,6 +1328,69 @@ form textarea {
   border-radius: 4px;
   cursor: pointer;
 }
+
+/* Mobile - Feed Adoção */
+
+.filtros,
+  .filtro {
+    padding: 1rem;
+  }
+
+  .filtros h1,h2,p{
+    text-align: center;
+  }
+
+  .filter-form {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+
+  .filter-form select,
+  .filter-form button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .fundos {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .fundos img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .fill {
+    padding: 1rem;
+    margin-top: 20px;
+  }
+
+  .load-more {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .fundos {
+    grid-template-columns: 1fr;
+    justify-items: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .fundos > div {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .fundos img {
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+  }
+
+
 
 
     /* Mobile - Footeer */

@@ -10,23 +10,23 @@
 <div class="container m-auto" id="cardform">
     <div class="row d-flex">
         <div class="col-6">
-            <input type="text" placeholder="Nome Completo*" required>
+            <input type="text" placeholder="Nome Completo*" name="nome" required>
         </div>
         <div class="col-6">
-            <input type="date" required>
+            <input type="date" name="data_nasc" required>
         </div>
     </div>
     <div class="row">
         <div class="col-6">
-            <input type="number" placeholder="CPF*" required>
+            <input type="text" placeholder="CPF*" name="cpf" required>
         </div>
         <div class="col-6">
-            <input type="tel" placeholder="Telefone celular*" required>
+            <input type="text" placeholder="Telefone celular*" name="telefone" required>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <input type="email" placeholder="E-mail*" required>
+            <input type="email" placeholder="E-mail*" name="email" required>
         </div>
     </div>
     <div class="row">
@@ -39,7 +39,7 @@
             <input type="password" placeholder="Crie sua senha*" required>
         </div>
         <div class="col-6">
-            <input type="password"   placeholder="Confirme sua senha*" required>
+            <input type="password"   placeholder="Confirme sua senha*" name="password" required>
         </div>
         <div>
         <input type="checkbox"> Estou de acordo com os <b><a href="" style="color: var(--cor-3);">termos de privacidade</a></b>
