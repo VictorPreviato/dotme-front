@@ -17,12 +17,21 @@ h1 {
     font-size: 40px;
 }
 
+h3{
+    font-weight: 600;
+}
+
+h4{
+    margin-bottom: 0;
+}
+
 h5 {
     color: var(--cor-3);
 }
 
 p {
     font-size: 16px;
+    margin-bottom: 0;
 }
 
 :root {
@@ -905,7 +914,60 @@ form textarea {
   display: none !important;
 }
 
+/* <<<<< DESCRIÇÃO - PET >>>>> */
 
+.descflex{
+    display: flex;
+    justify-content: center;
+     column-gap: 4vw; 
+     row-gap: 5vh;
+}
+
+#imgdesc{
+    height: 50vh;
+    width: 25vw;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.desccontent div{
+    margin-bottom: 1vh;
+    width: 40vw;
+}
+
+.headcontdesc{
+    display: flex;
+}
+
+#tdescani{
+    width: 30vw;
+}
+
+#tagsdesc{
+    display: flex;
+    width: 40vw;
+
+    text-align: center;   
+}
+
+.decflex h1,h3{
+    margin-top: 3vh;
+}
+
+.tagsdesc{
+    display: flex;
+    justify-content: center;
+    column-gap: 1vw;
+}
+
+.tagsdesc div{
+    background-color: #DCF2F0;
+    width: 6vw;
+    height: 3vh;
+    text-align: center;
+    color: var(--cor-1);
+    border-radius: 12px;
+}
 
 /* <<<<< FOOTER >>>>> */
 

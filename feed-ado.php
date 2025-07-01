@@ -75,19 +75,23 @@
         ($filtroIdade === '' || $animal['idade_categoria'] === $filtroIdade) &&
         ($filtroPorte === '' || $animal['porte'] === $filtroPorte);
     });
-
+ 
     // Exibe os animais
     if (empty($animaisFiltrados)) {
       echo "<p>Nenhum animal encontrado com esses filtros.</p>";
     } else {
-      foreach ($animaisFiltrados as $index => $animal) {
-        $hidden = $index >= 6 ? 'hidden' : ''; // Mostra só os 6 primeiros
-        echo '<div class="foto ' . $hidden . '">';
-        echo '<img src="'.$animal['img'].'" alt="'.$animal['nome'].'" />';
-        echo '<h3 class="tl">'.$animal['nome'].'</h3>';
-        echo '<p class="tl">'.$animal['idade'].' - '.$animal['sexo'].'</p>';
-        echo '</div>';
-      }
+      $totalMostrados = 0;
+    foreach ($animaisFiltrados as $animal) {
+    $hidden = $totalMostrados < 6 ? '' : 'hidden';
+ 
+    echo '<div class="foto ' . $hidden . '">';
+    echo '<img src="'.$animal['img'].'" alt="'.$animal['nome'].'" />';
+    echo '<h3 class="tl">'.$animal['nome'].'</h3>';
+    echo '<p class="tl">'.$animal['idade'].' - '.$animal['sexo'].'</p>';
+    echo '</div>';
+ 
+  $totalMostrados++;
+}
     }
     ?>
 </div>
