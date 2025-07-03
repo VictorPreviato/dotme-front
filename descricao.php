@@ -1,5 +1,9 @@
 <?php include './parciais/header.php' ?>
 
+<div class="sitdesc">
+    <h4>Adoção</h4>
+</div>
+
 <div class="descflex">
     <div>
         <img id="imgdesc" src="./IMG/PET/lobinho.jpg" alt="">
@@ -17,10 +21,10 @@
         </div>
         <div id="tdescani">
             <h3>Sobre o pet</h3>
-            <p>Estou de mudança e não consigo me manter com o mesmo, por isso estou doando para alguém que queira uma nova amizade. Lobinho é um cachorro dócil que gosta muito de carinho e atenção, além de ser um bom companheiro </p>
+            <p>Estou de mudança e não consigo me manter com o mesmo, por isso estou doando para alguém que queira uma nova amizade. Lobinho é um cachorro dócil que gosta muito de carinho e atenção, além de ser um bom companheiro.</p>
         </div>
-        <h3 style="text-align: center;">Descrição do animal</h3>
-        <div id="tagsdesc">
+        <h3 >Descrição do animal</h3>
+        <div id="descval">
             <div>
                 <h5>Peso</h5>
                 <p>10kg</p>
@@ -54,10 +58,12 @@
 </div>
     <h3 style="text-align: center;">Características do animal</h3>
 <div class="tagsdesc">
-    <div>
        <h5>Dócil</h5> 
-    </div>
-   
+       <h5>Brincalhão</h5> 
+       <h5>Castrado</h5> 
+       <h5>Sociável</h5> 
+       <h5>Alegre</h5> 
+       <h5>Companheiro</h5> 
 </div>
 
 

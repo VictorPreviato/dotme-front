@@ -13,7 +13,32 @@
 
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
 
+
+
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+
+<!-- Filtro CEP -->
+<script>
+function buscarCEP() {
+  const cep = document.getElementById('cep').value.replace(/\D/g, '');
+
+  fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    .then(response => response.json())
+    .then(data => {
+      if (data.erro) {
+        alert("CEP não encontrado.");
+        document.getElementById('cidade').value = '';
+        document.getElementById('estado').value = '';
+      } else {
+        document.getElementById('cidade').value = data.localidade;
+        document.getElementById('estado').value = data.uf;
+      }
+    })
+    .catch(() => alert("Erro ao buscar CEP."));
+}
+</script>
+
+
 
 <script>
 function mostrarMais() {

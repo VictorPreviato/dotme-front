@@ -16,8 +16,8 @@
    
 <div>
   <a href="index.php"><img src="IMG/LOGOS/Logosn.svg" alt="" class="logonav"></a>
-  <button onclick="document.location='feed-ado.php'" class="bnav">Adote um Pet</button>
-  <button onclick="document.location=''" class="bnav">Desaparecidos</button>
+  <button onclick="document.location='adocao.php'" class="bnav">Adote um Pet</button>
+  <button onclick="document.location='desaparecidos.php'" class="bnav">Desaparecidos</button>
   <button onclick="document.location=''" class="bnav">Sobre o Projeto</button>
 </div>
 
@@ -60,7 +60,7 @@
       <div class="offcanvas-body mt-4 ms-3">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link" href="feed-ado.php">Adote um Pet</a>
+            <a class="nav-link" href="adocao.php">Adote um Pet</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Desaparecidos</a>
@@ -73,3 +73,4 @@
     </div>
   </div>
 </nav>
+

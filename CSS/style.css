@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
     margin-top: 110px;
 }
 
@@ -27,6 +27,7 @@ h4{
 
 h5 {
     color: var(--cor-3);
+    margin-bottom: 0;
 }
 
 p {
@@ -399,6 +400,7 @@ input[type=search] {
     transform: translateX(-15px);
     margin-left: 4vw;
 }
+
 
 .cards-box .card {
     width: 18vw;
@@ -916,6 +918,21 @@ form textarea {
 
 /* <<<<< DESCRIÇÃO - PET >>>>> */
 
+.sitdesc{
+    position: absolute;
+    right: 10%;
+    top: 13%;
+    width: 10vw;
+    text-align: center;
+}
+
+.sitdesc h4{
+    color: white;
+    background-color: var(--cor-1);
+    padding: 5px 10px;
+    border-radius: px;
+}
+
 .descflex{
     display: flex;
     justify-content: center;
@@ -925,7 +942,7 @@ form textarea {
 
 #imgdesc{
     height: 50vh;
-    width: 25vw;
+    width: 22vw;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -943,12 +960,11 @@ form textarea {
     width: 30vw;
 }
 
-#tagsdesc{
+#descval{
     display: flex;
     width: 40vw;
-
-    text-align: center;   
 }
+
 
 .decflex h1,h3{
     margin-top: 3vh;
@@ -960,13 +976,13 @@ form textarea {
     column-gap: 1vw;
 }
 
-.tagsdesc div{
+.tagsdesc h5{
     background-color: #DCF2F0;
-    width: 6vw;
-    height: 3vh;
+    width: fit-content;
     text-align: center;
     color: var(--cor-1);
     border-radius: 12px;
+    padding: 3px 10px;
 }
 
 /* <<<<< FOOTER >>>>> */
