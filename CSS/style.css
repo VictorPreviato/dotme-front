@@ -588,8 +588,20 @@ input[name="but-cad"] {
     font-size: 20px;
     font-weight: 700;
     margin-top: 3vh;
-
 }
+
+.pass{
+    position: relative;
+}
+
+.show-psswd{
+  position: absolute;
+  right: 1rem;
+  top: 20%;
+  background-color: transparent;
+  border: none;
+}
+
 
 input[name="but-cad"]:hover {
     background-color: rgba(49, 64, 62, 0.9);
@@ -995,7 +1007,7 @@ form textarea {
 .descdono{
     display: flex;
     flex-direction: row;
-    margin-top: 3%;
+
     justify-content: center;
     gap: 5vw;  
 }

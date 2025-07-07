@@ -16,6 +16,24 @@
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
 
 <script>
+  document.querySelectorAll('.show-psswd').forEach(button => {
+    const targetSelector = button.getAttribute('data-toggle-target')
+    const input = document.querySelector(targetSelector)
+    const icon = button.querySelector('img')
+
+    button.addEventListener('click', () => {
+      if (input) {
+        input.type = input.type === 'password' ? 'text' : 'password'
+
+        icon.src = icon.src.includes('eye_open')
+          ? './IMG/ICONSENHA/eye_closed.svg'
+          : './IMG/ICONSENHA/eye_open.svg'
+      }
+    })
+  })
+</script>
+
+<script>
 var lat = -23.6469595;
 var lon = -46.7032713;
 

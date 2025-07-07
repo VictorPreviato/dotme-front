@@ -56,7 +56,7 @@
         </div>
     </div>
 </div>
-<h3 style="text-align: center;">Características do animal</h3>
+<h3 style="text-align: center; margin-top:3%">Características do animal</h3>
 <div class="tagsdesc">
     <h5>Dócil</h5>
     <h5>Brincalhão</h5>
@@ -65,6 +65,8 @@
     <h5>Alegre</h5>
     <h5>Companheiro</h5>
 </div>
+
+<h3 style="text-align: center; margin-top:3%">Sobre o dono</h3>
 
 <div class="descdono">
     <div class="mapflex">
