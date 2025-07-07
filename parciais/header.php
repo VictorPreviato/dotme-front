@@ -70,7 +70,7 @@
             <a class="nav-link" href="adocao.php">Adote um Pet</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Desaparecidos</a>
+            <a class="nav-link" href="desaparecidos.php">Desaparecidos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Sobre o Projeto</a>
