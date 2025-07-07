@@ -13,9 +13,22 @@
 
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
 
-
-
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+
+<script>
+var lat = -23.6469595;
+var lon = -46.7032713;
+
+var map = L.map('map').setView([lat, lon], 17);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+var marker = L.marker([lat, lon]).addTo(map);
+marker.bindPopup("R. Dr. Antônio Bento, 393 – Santo Amaro, SP").openPopup();
+</script>
 
 <!-- Filtro CEP -->
 <script>
