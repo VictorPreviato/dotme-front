@@ -35,15 +35,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-6 pass">
+       <div class="col-6 pass" style="position: relative;">
   <input type="password" name="password" id="password" placeholder="Crie sua senha*" required>
   <button class="show-psswd" type="button" data-toggle-target="#password">
     <img src="./IMG/ICONSENHA/eye_open.svg" alt="">
   </button>
 </div>
-        <div class="col-6">
-            <input type="password" placeholder="Confirme sua senha*" name="password" required>
-        </div>
+
+<div class="col-6 pass" style="position: relative;">
+  <input type="password" placeholder="Confirme sua senha*" name="password_confirmation" id="confirm-password" required>
+  <button class="show-psswd" type="button" data-toggle-target="#confirm-password">
+    <img src="./IMG/ICONSENHA/eye_open.svg" alt="">
+  </button>
+</div>
         <div>
         <input type="checkbox"> Estou de acordo com os <b><a href="" style="color: var(--cor-3);">termos de privacidade</a></b>
         </div>

@@ -13,7 +13,7 @@
 
 <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
 
-<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+<!-- <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script> -->
 
 <script>
   document.querySelectorAll('.show-psswd').forEach(button => {

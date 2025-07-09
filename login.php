@@ -15,9 +15,12 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 log-input">
         <form>
-            <input type="password" name="senha-login" placeholder="Senha" required>
+            <input type="password" name="senha-login" placeholder="Senha" id="login-password" required>
+             <button class="show-psswd" type="button" data-toggle-target="#login-password" id="passtogglelog">
+    <img src="./IMG/ICONSENHA/eye_open.svg" alt="">
+  </button>
         </form>
     </div>
 </div>
