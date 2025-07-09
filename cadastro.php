@@ -58,6 +58,7 @@
 </div>
 </form>
 
+
 <p style="text-align: center;">Ja possui cadastro? <b><a href="./login.php" style="color: var(--cor-3);">Acesse aqui!</a></b></p>
 
 <?php include'./parciais/footer.php' ?>

@@ -1146,17 +1146,16 @@ form textarea {
 
 /* <<<<< ALTSENHA(REDEFINIÇÃO DA SENHA) >>>>> */
 
- 
 .caixa-rsenha{
- 
-    padding: 20px;
+    margin-top: 10%;
+    margin-bottom: 7%;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 8%;
+   
 }
 
 input[name=nova-senha]{
@@ -1187,11 +1186,12 @@ input[name=confirmar-nsenha]{
     background-color: #31403E;
     color: #F5F5F5;
     font-size: 16px;
-    margin: 10px;   
+    margin: 10px;  
+     
 }
 
 .but-rcsenha:hover{
-    background-color: rgba(49, 64, 62, 0.9);
+     background-color: rgba(49, 64, 62, 0.9)
 }
  
 .but-rcasenha{
@@ -1204,11 +1204,21 @@ input[name=confirmar-nsenha]{
     background-color: #777777;
     color: #F5F5F5;
     font-size: 16px;  
-    margin: 10px;  
+    margin: 10px;   
+}
+
+#nova-senhatoggle{
+    right: 26%;
+    top: 25%;
+}
+
+#confirmar-nsenhatoggle{
+    right: 26%;
+    top: 25%;
 }
 
 .but-rcasenha:hover{
-    background-color: rgba(119, 119, 119, 0.9);
+    background-color: rgba(119, 119, 119, 0.8);
 }
  
 .bt-rsenha{
@@ -1457,7 +1467,7 @@ input[name=confirmar-nsenha]{
         width: 80vw;
     }
 
-    /* Mobile - Altsenha(confirmação de w-mail) */
+    /* Mobile - Altsenha(confirmação de e-mail) */
 
     .img-altemail{
     width: 50vw;
@@ -1495,44 +1505,48 @@ input[name=confirmar-nsenha]{
 
 /* Mobile = Altsenha(Redefinição de senha) */
 
-    .caixa-rsenha{
-    width: 80vw;
+.caixa-rsenha{
+    width: 90VW;
 }
 
 .prsenha{
     width: 70vw;
 }
- 
-input[name=nova-senha]{
 
-    height: 10vw;
-    width: 50vw;
+input[name=nova-senha]{
+    width: 70vw;
 }
 
 input[name=confirmar-nsenha]{
 
-    height: 10vw;
-    width: 50vw;
+    width: 70vw;
 }
- 
+
+.bt-rsenha div{
+    width: 100%;
+}
+
 .but-rcsenha{
-    width: 95%;
+    width: 90%;
     height:50px;
     font-size: 12px;  
 }
+
+#nova-senhatoggle{
+    right: 13%;
+
+}
+
+#confirmar-nsenhatoggle{
+    right: 13%;
+    
+}
  
 .but-rcasenha{
-    width: 95%;
+    width: 90%;
     height:50px;
     font-size: 12px;      
 }
- 
-.bt-rsenha{
-    display: block;
-    gap: 5vw; 
-}
-
-
 
 /* Mobile - Postagem */
 
