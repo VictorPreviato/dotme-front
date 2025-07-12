@@ -1,7 +1,6 @@
 <?php include './parciais/header.php' ?>
 
 <!-- Carrossel topo -->
-
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" id="on"></button>
@@ -42,8 +41,15 @@
 </div>
 </div>
 
-<!-- Carrossel animais - Desaparecidos -->
+<!-- Encaminhar para postagem -->
+<div id="posthome">
+    <div id="poshomecontent">
+        <h3 style="color: white;">Seu companheiro sumiu ou você precisa doá-lo?</h3>
+        <button onclick="document.location='postagem.php' ">Clique aqui</button>
+    </div>
+</div>
 
+<!-- Carrossel animais - Desaparecidos -->
  <div class="slide-container swiper">
     <div class="tcaranim">
     <h1>Animais Desaparecidos</h1>
@@ -115,6 +121,7 @@
             <div class="swiper-button-prev swiper-navBtn"></div>
              <div class="swiper-pagination"></div>
         </div>
+        
 
 <!-- Banner -->
 <div id="bannerhdiv">
