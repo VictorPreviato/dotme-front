@@ -33,8 +33,8 @@
 </div>
 <div class="row">
     <form >
-        <button class="but-log" name="but-log"
-                type="submit" ><b>Login</b></button>
+        <button onclick="document.location='index.php' " class="but-log" name="but-log"
+                type="button" ><b>Login</b></button>
     </form>
 </div>
 <div class="row">

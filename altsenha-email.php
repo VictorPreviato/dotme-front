@@ -1,6 +1,5 @@
 <?php include './parciais/header.php' ?>
 
-<img class="img-altemail" src="IMG/LOGOS/Logosn.svg" alt="logo">
 
 <div class="caixa-senha">
     <h1 class="tsenha" style="text-align: center;">Redefinição de senha</h1>
@@ -15,16 +14,15 @@
     <div class="bt-senha" style="margin-top: 20px;">
         <div>
             <form>
-                <button
-                    class="but-casenha"
+                <button class="but-casenha"
                     type="submit"><b>Cancelar</b></button>
             </form>
         </div>
         <div>
             <form>
-                <button
+                <button onclick="document.location='altsenha-reset.php'" 
                     class="but-csenha"
-                    type="submit"><b>Confirmar</b></button>
+                    type="button"><b>Confirmar</b></button>
             </form>
         </div>
     </div>

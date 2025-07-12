@@ -13,7 +13,6 @@
             <label for="arquivo"></label>
             <input type="file" name="foto" id="inputArquivo" multiple accept="image/*">
           </div>
-          <p>Você pode enviar até 5 imagens</p>
           <div id="preview-imagens" class="preview-imagens-container"></div>
         </div>
       </form>

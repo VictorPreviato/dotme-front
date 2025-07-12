@@ -34,9 +34,9 @@
         </div>
         <div>
             <form>
-                <button
+                <button onclick="document.location='login.php' "
                     class="but-rcsenha"
-                    type="submit"><b>Confirmar</b></button>
+                    type="button"><b>Confirmar</b></button>
             </form>
         </div>
     </div>

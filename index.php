@@ -50,6 +50,7 @@
 </div>
 
 <!-- Carrossel animais - Desaparecidos -->
+ <div class="slide-wrapper">
  <div class="slide-container swiper">
     <div class="tcaranim">
     <h1>Animais Desaparecidos</h1>
@@ -116,10 +117,10 @@
                    
                 </div>
             </div>
-
-             <div class="swiper-button-next swiper-navBtn"></div>
+              <div class="swiper-button-next swiper-navBtn"></div>
             <div class="swiper-button-prev swiper-navBtn"></div>
              <div class="swiper-pagination"></div>
+            </div>
         </div>
         
 

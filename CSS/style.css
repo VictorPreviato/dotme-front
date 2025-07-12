@@ -787,7 +787,7 @@ text-align: center;
 .right-panel {
   flex: 2;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   border:thin solid #9BBFBC;
 }
@@ -1615,6 +1615,12 @@ input[name=confirmar-nsenha]{
 
 /* Mobile - Postagem */
 
+.postcont {
+  display: flex;
+  padding: 10px;
+  gap: 1px;
+}
+
 .left-panel{
     margin-bottom: 10px;
 }
@@ -1880,6 +1886,12 @@ input[name=confirmar-nsenha]{
 
     .cardepoi .card{
         height: 50vh;
+    }
+
+    /* Postagem - Mobile (Paisagem) */
+
+    .upload-box{
+        height: 160px;
     }
 
 }
