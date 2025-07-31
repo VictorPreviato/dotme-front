@@ -25,7 +25,7 @@
   <a href="index.php"><img src="IMG/LOGOS/Logosn.svg" alt="" class="logonav"></a>
   <button onclick="document.location='adocao.php'" class="bnav">Adote um Pet</button>
   <button onclick="document.location='desaparecidos.php'" class="bnav">Desaparecidos</button>
-  <button onclick="document.location=''" class="bnav">Sobre o Projeto</button>
+  <button onclick="document.location='sobre.php'" class="bnav">Sobre o Projeto</button>
 </div>
 
 <div class="user-actions">
@@ -73,7 +73,7 @@
             <a class="nav-link" href="desaparecidos.php">Desaparecidos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sobre o Projeto</a>
+            <a class="nav-link" href="sobre.php">Sobre o Projeto</a>
           </li>
         </ul>
       </div>

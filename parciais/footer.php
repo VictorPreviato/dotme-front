@@ -2,8 +2,8 @@
   <img src="IMG/LOGOS/DotPetLogT.png" alt="" class="logofoot">
   <div class="linkfoot">
     <a href="">Campanhas</a>
-    <a href="">Contato</a>
-    <a href="">Apoie o Projeto</a>
+    <a href="contato.php">Contato</a>
+    <a href="sobre.php">Sobre o Projeto</a>
     <a href="faq.php">FAQ</a>
     <a href=""></a>
     <div style="text-align: center; margin-top:5%"><?php echo "© " . date("Y") . " DotMe | Todos os direitos reservados " ?></div>
